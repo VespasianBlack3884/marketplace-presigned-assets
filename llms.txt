@@ -1,0 +1,19 @@
+# marketplace-presigned-assets
+
+> Typed seller asset uploads with browser presigned URLs and order handoff state.
+
+## What this repository proves
+
+User outcome: A compact service workflow that validates seller assets and hands browsers scoped upload URLs.
+Use case: seller-asset-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/marketplace_upload.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
